@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+ 
+    <title>smatroncode-contact</title>
+
+     <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/contact.css">
+
+  
+  <!-- script for icons -->
+  <script
+   src="https://kit.fontawesome.com/c65c3f2840.js" crossorigin="anonymous">
+  </script>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+ 
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  
+  <!-- --------------------bootstrap--------------------- -->
+      <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+      crossorigin="anonymous"
+      />
+  <!-- --------------------contactJS--------------------- -->
+    <script src="./assets/js/contact.js"></script>
+
+  <!-- email sending cdn js -->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+  <!-- emailJS function  -->
+  
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("whTR_HwX0OfPkPA3B");
+      })();
+    </script>
+ 
+
+</head>
+
+<div id="header">
+  <div class="container">
+    <nav>
+      <a href="#">
+        <img src="./assets/images/logo-lightt.png" alt="smartroncode logo" class="logo-light">
+        <!-- <img src="./assets/images/logo-darkk.png" alt="smartroncode logo" width="150" class="logo-dark"> -->
+      </a>
+      <ul id="sideMenu">
+        <li style="margin-left: 40em;"><a href="index.html">Home</a></li>
+        <li><a href="main-content.html">Blogs</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- xmark icon -->
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+      </ul>
+      <!-- menu icon  -->
+      <i style="margin-left: 19em;" class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+   
+  </div>
+</div>
+
+<!-- ---------------------contact------------------ -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Amol</h1>
+        <p><i class="fa-solid fa-envelope"></i>amolgahane99@gmail.com</p>
+        <p><i class="fa-brands fa-telegram"></i>+91-9075692631</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+
+        <a href="./CV/Amol_CV.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form action="">
+          <input  id="username"
+           type="text" name="Name" placeholder="Your name" required />
+          <input
+          id="useremail"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="usermsg"
+            rows="6"
+            placeholder="Message for Amol"
+          ></textarea>
+          <button type="submit" class="btn btn2" onclick="sendMail()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <p class="copyright">
+    &copy; Copyright 2023 <a href="#">smartroncode</a>
+  </p>
+ 
+</div>
+
+<!-- --------------------JavaScript--------------------- -->
+
+
+<!-- script for side Menu -->
+<script>
+  var sideMenu = document.getElementById("sideMenu");
+
+  function openMenu() {
+    sideMenu.style.right = "0";
+  }
+
+  function closeMenu() {
+    sideMenu.style.right = "-200px";
+  }
+</script>
+</body>
+</html>
