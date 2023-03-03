@@ -121,6 +121,12 @@ body{
 	color: #7b8ca0;
 }
 
+/* to remove underline */
+.card_inner a{
+	text-decoration: none;
+}
+
+
 @media screen and (max-width: 1024px){
 	.cards_wrap .card_item{
 		width: 33%;
