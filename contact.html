@@ -64,15 +64,17 @@
         <img src="./assets/images/logo-lightt.png" alt="smartroncode logo" class="logo-light">
         <!-- <img src="./assets/images/logo-darkk.png" alt="smartroncode logo" width="150" class="logo-dark"> -->
       </a>
-      <ul id="sideMenu">
-        <li style="margin-left: 40em;"><a href="index.html">Home</a></li>
+      <ul id="side-menu">
+      
+        <li  style="margin-left: 40em;"><a href="index.html">Home</a></li>
         <li><a href="main-content.html">Blogs</a></li>
         <li><a href="#">Contact</a></li>
         <!-- xmark icon -->
         <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
       </ul>
       <!-- menu icon  -->
-      <i style="margin-left: 19em;" class="fa-solid fa-bars" onclick="openMenu()"></i>
+      <i id="open-menu"
+       class="fa-solid fa-bars" onclick="openMenu()"></i>
     </nav>
    
   </div>
@@ -88,6 +90,7 @@
         <p><i class="fa-solid fa-envelope"></i>amolgahane99@gmail.com</p>
         <p><i class="fa-brands fa-telegram"></i>+91-9075692631</p>
         <div class="social-icons">
+
           <a href="https://facebook.com/"
             ><i class="fa-brands fa-facebook"></i
           ></a>
@@ -138,7 +141,7 @@
 
 <!-- script for side Menu -->
 <script>
-  var sideMenu = document.getElementById("sideMenu");
+  var sideMenu = document.getElementById("side-menu");
 
   function openMenu() {
     sideMenu.style.right = "0";

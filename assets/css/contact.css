@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
   box-sizing: border-box;
 
 }
@@ -17,7 +17,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 body {
@@ -35,7 +35,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: -12px;
-  
+  font-weight: 600;
 }
 div nav h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -63,12 +63,13 @@ nav ul li {
   margin: 10px 20px;
   
 }
-
+/* nav color */
 nav ul li a{
-  color: hsl(216, 15%, 52%);
+  color: #4E6E81;
+  
+  /* color: hsl(216, 18%, 29%); */
   
 }
-
 
 
 nav ul li a::after {
@@ -87,21 +88,11 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.header-text {
-  margin-top: 20%;
-  font-size: 30px;
-}
-.header-text h1 {
-  font-size: 60px;
-  margin-top: 20px;
-}
-
-.header-text h1 span {
-  color: #256d85;
-
-}
 
 
+/* #side-menu li a{
+  margin-left: 40em;
+} */
 
 /*-- ---------------------contact------------------ --*/
 #contact{
@@ -141,6 +132,7 @@ nav ul li a:hover::after {
   transform: translateY(-5px);
 }
 
+/* download cv button */
 .btn.btn2 {
   margin-top: 30px;
   display: inline-block;
@@ -163,6 +155,7 @@ nav ul li a:hover::after {
 }
 
 /* ----------- from ----------- */
+
 .contact-right form {
   width: 100%;
 
@@ -182,13 +175,16 @@ form textarea {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+/* submit button */
 form .btn.btn2 {
   display: inline-block;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
-  padding: 12px 50px;
+  font-size: 20px;
+  padding: 12px 35px;
   margin-top: 20px;
+  letter-spacing: 2px;
+  
 }
 
 .copyright {
@@ -197,8 +193,9 @@ form .btn.btn2 {
   text-align: center;
   background: #0b0b0b;
   color: aliceblue;
-  margin-top: 30px;
+  margin-top: 10%;
   font-weight: 300;
+ 
 }
 .copyright a:link{
   text-decoration: none;
@@ -214,18 +211,53 @@ nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   /* ----- header page first page------ */
+
  
+ 
+/* bar open menu */
+
+#open-menu{
+  margin-left: 92%;
+  margin-top: 12px;
+}
+  
+  .contact-right .btn.btn2{
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-left: 12px;
+  } 
+  /* download cv btn padding decsrease */
+  .contact-left .btn.btn2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    
+  
+  }
+  /* decrease textarea size  */
+  form input,
+form textarea {
+  width: 92%;
+  padding: 12px;
+  margin: 12px;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 12px;
+
+}
  
   .container nav h1 {
     font-size: 50px;
   }
 
-  .header-text h1 {
-    margin-top: 10%;
-    font-size: 30px;
-  }
 
   nav .fa-solid {
     display: block;
@@ -234,20 +266,29 @@ nav .fa-solid {
 
   nav ul {
     background: #256d85;
+    
+    border-radius: 2px;
     position: fixed;
     top: 0;
     right: -200px;
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 2;
+    z-index: 1;
     transition: 0.5s;
   }
 
   nav ul li {
     display: block;
     margin: 25px;
+    
   }
+
+  nav ul li a{
+    color: #f9f9f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+ 
 
   nav ul .fa-solid {
     position: absolute;
@@ -266,8 +307,16 @@ nav .fa-solid {
 
   .sub-title {
     font-size: 30px;
+    margin-left: 12px;
+  }
+  .contact-left p{
+    margin-left: 12px;
   }
 
+  .social-icons{
+    margin-top: -12px;
+    margin-left: 12px;
+  }
   .contact-left,
   .contact-right {
     /* flex basis for stretch */
