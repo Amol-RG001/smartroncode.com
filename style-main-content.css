@@ -153,3 +153,16 @@ body{
 		font-size: 14px;
 	}
 }
+
+/* custom scroll bar */
+::-webkit-scrollbar { width: 16px; }
+
+::-webkit-scrollbar-track { background: hsl(0, 0%, 90%);}
+  
+::-webkit-scrollbar-thumb {
+  background: #e36686;
+  border-radius: 20px;
+  border: 4px solid;
+  border-color: hsl(0, 0%, 90%);
+ 
+}
